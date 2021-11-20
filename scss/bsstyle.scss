@@ -1,0 +1,210 @@
+@mixin paddingmaker($top, $right, $bottom, $left) {
+    padding: {
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left
+    };
+}
+
+body {
+    .mynavbar {
+        background-color: rgba(59,41,89,255);
+        .container {
+            a {
+                color: rgba(227,213,247,255);                ;
+            }
+            .collapse {
+                ul {
+                    li {
+                        a {
+                            color: rgba(227,213,247,255);
+                        }
+                    }
+                }
+                .mynavform {
+                    .mysearch {
+                        background-color: transparent;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        .mymodal {
+            width: 100%;
+            position: relative;
+            .mymodaldialog {
+                margin-left: 10px;
+                margin-right: 10px;
+                max-width: 100%;
+                .modal-content {
+                    box-shadow: 1px 1px 9px gray;
+                    .mymodalheader {
+                        padding-bottom: 0;
+                        h5 {
+                            margin-top: 50px;
+                            font: {
+                                weight: lighter;
+                                size: 28px;
+                            };
+                        }
+                        p {
+                            margin: {
+                                top: 20px;
+                                bottom: 0;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+        .myhr {
+            span { 
+                margin-top: 10px;
+                width: 90%;
+            }
+        }
+        .mymodalbody {
+            padding-top: 0;
+            font-size: 13px;
+        }
+        .mymodalfooter {
+            margin: auto;
+            margin-bottom: 45px;
+            .downloadbutton {
+                border: 2px solid rgba(137,14,79,255);
+                color: rgba(137,14,79,255);
+                font-size: 13px;
+                @include paddingmaker(10px, 30px, 10px, 30px);
+            }
+            .learnbutton {
+                background-color: rgba(137,14,79,255);
+                font-size: 13px;
+                @include paddingmaker(10px, 30px, 10px, 30px);
+            }
+        }
+        .myrow {
+            .col-lg-4 {
+                margin-top: 20px;
+                .card {
+                    box-shadow: 1px 1px 9px rgb(212, 209, 209);
+                    img {
+                        height: 237px;
+                    }
+                    .card-body{
+                        .mycardbutton {
+                            margin-left: 5px;
+                            background-color: rgba(53,181,230,255);
+                            @include paddingmaker(10px, 35px, 10px, 35px)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        margin-top: 100px;
+        background-color: rgba(59,41,89,255);
+        .mycontainer {
+            .row {
+                .col-3{
+                    color: white;
+                    @include paddingmaker(10px, 0, 0, 0)
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container {
+        width: 1020px;
+    }
+    .mycontainer {
+        width: 1300px;
+        margin: auto;
+        max-width: 100%;
+    }
+}
+
+@media  screen and (max-width: 992px) {
+    body {
+        .mynavbar {
+            display: block;
+            text-align: center;
+            .container {
+                max-width: 100%;
+                display: block;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                a{
+                    margin: auto;
+                }
+                .mytoggler {
+                    display: none;
+                }
+                .mycollapse {
+                    display: none;
+                }
+            }
+        }
+        .container {
+            .myrow {
+                display: block;
+                .mycol4 {
+                    margin: auto;
+                    margin-top: 20px;
+                    width: 55%;
+                    .card {
+                        a {
+                            display: block;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .row {
+                --bs-gutter-x: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 460px){
+    body {
+        .container {
+            .myrow {
+                display: block;
+                .mycol4 {
+                    margin: auto;
+                    margin-top: 20px;
+                    width: 87%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 398px){
+    body {
+        .container {
+            .mymodal {
+                .mymodaldialog{
+                    .modal-content{
+                        .mymodalfooter{
+                            display: block;
+                            .btn {
+                                display: block;
+                                margin: auto;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
