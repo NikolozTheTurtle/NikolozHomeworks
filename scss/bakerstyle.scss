@@ -1,0 +1,433 @@
+@mixin paddingmaker($top, $right, $bottom, $left) {
+    padding: {
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left
+    };
+}
+
+@mixin blurcolor($color, $opacity){
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $color;
+        opacity: $opacity;
+    }
+}
+
+body {
+    header{
+        background-image: url(https://images.immediate.co.uk/production/volatile/sites/4/2010/07/GettyImages-1007206866-ef4f1ee.jpg?quality=90&resize=940%2C400);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include blurcolor(#323b4a, 0.76);
+        .mynavbar {
+            @include paddingmaker(0, 0, 0, 0);
+            .mycontainer {
+                @include paddingmaker(30px, 25px, 0, 15px);
+                .bakerlogo {
+                    span {
+                        font-size: 28px;
+                    }
+                    span:first-child {
+                        color: #f9fcff;
+                    }
+                    span:last-child {
+                        color: #c49b25;
+                    }
+                }
+                .collapse {
+                    .navbar-nav {
+                        a{
+                            padding-left: 20px;
+                            color: white;
+                            &:hover{
+                                color: #c49b25;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .myheaderbody {
+            padding-bottom: 180px;
+            h3 {
+                padding-top: 100px;
+                padding-bottom: 50px;
+                font-size: 25px;
+            }
+            h1 {
+                padding-bottom: 40px;
+                font-size: 50px;
+            }
+            h3, h1, p {
+                color: white;
+            }
+            p {
+                width: 93%;
+                font-size: 17px;
+            }
+            .mybuttons2 {
+                padding-top: 65px;
+                .mydownloadbtn {
+                    @include paddingmaker(13px, 30px, 13px, 30px);
+                    background-color: #c49b25;
+                    font: {
+                        size: 14px;
+                    };
+                    margin-right: 26px;
+                    margin-bottom: 15px;
+                }
+                .mylearnbtn {
+                    @include paddingmaker(13px, 30px, 13px, 30px);
+                    background-color: transparent;
+                    font: {
+                        size: 15px;
+                    };
+                    margin-bottom: 15px;
+                    border-color: #c49b25;
+                    color: #c49b25;
+                }
+            }
+        }
+        svg{
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 35px;
+            color: white;
+        }
+    }
+    section {
+        .mysectioncont {
+            .bulbrow {
+                --bs-gutter-x: 0;
+                margin-top: 66px;
+                margin-bottom: 76px;
+                .col-md-3, .col-6{
+                    img {
+                        width: 33%;
+                    }
+                }
+            }
+        }
+        .wwd {
+            h1 {
+                color: #68696d;
+                padding-top: 86px;
+                padding-bottom: 40px;
+            }
+            & > p {
+                font-size: 25px;
+                padding-bottom: 40px;
+                width: 660px;
+                max-width: 100%;
+            }
+            background-color: #f3f4f8;
+            hr{
+                width: 40px;
+                color: #bb9708;
+                opacity: 2;
+                height: 3px;
+            }
+            .container-fluid{
+                .row{
+                    .col-lg-3, .col-sm-6{
+                        padding-left: 30px;
+                        .card {
+                            .card-body{
+                                h5{
+                                    color: #626367;
+                                    font-size: 30px;
+                                    span{
+                                        font-size: 80px;
+                                        color: #929397;
+                                    }
+                                }
+                                p {
+                                    padding-bottom: 30px;
+                                    color: #b1b2b6;
+                                    font-size: 18px;
+                                }
+                                a{
+                                    color: #c49b25;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ourrecentw {
+            h1 {
+                color: #68696d;
+                padding-top: 86px;
+                padding-bottom: 40px;
+            }
+            & > p {
+                font-size: 25px;
+                padding-bottom: 40px;
+                width: 660px;
+                max-width: 100%;
+            }
+            hr{
+                width: 40px;
+                color: #bb9708;
+                opacity: 2;
+                height: 3px;
+            }
+            .row{
+                margin-top: 40px;
+                margin-bottom: 75px;
+                .col-md-4, .col-12{
+                    .card {
+                        img{
+                            margin-bottom: 15px;
+                            height: 284px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+            }
+        }
+        .mycarousel { 
+            height: 390px;
+            margin-bottom: 86px;
+            .carousel-inner {
+                .carousel-item{
+                    .mycrcapt {
+                        .face {
+                            img{
+                                object-fit: cover;
+                                object-position: center;
+                                border: {
+                                    color: white;
+                                    style: solid;
+                                    width: 5px;
+                                };
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                top: -50%;
+                            }
+                        }
+                        padding-bottom: 30px;
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                    @include blurcolor(#313a49, 0.9);
+                    img {
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+        .latestnews {
+            h1 {
+                color: #68696d;
+                padding-bottom: 40px;
+            }
+            & > p {
+                font-size: 25px;
+                padding-bottom: 40px;
+                width: 660px;
+                max-width: 100%;
+            }
+            hr{
+                width: 40px;
+                color: #bb9708;
+                opacity: 2;
+                height: 3px;
+            }
+            .container-fluid {
+                .row {
+                    margin-right: 0;
+                    padding-top: 40px;
+                    padding-bottom: 66px;
+                    .col-md-4, .col-12 {
+                        .card {
+                            img {
+                                height: 196px;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                            .card-body {
+                                h5 {
+                                    font-size: 30px;
+                                    color: #575757;
+                                    padding-bottom: 28px;
+                                }
+                                .card-text {
+                                    color: #969696;
+                                    span {
+                                        padding-right: 150px;
+                                    }
+                                }
+                                .btn {
+                                    color: #969696;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    footer{
+        .keeptouch{
+            background-color: #495468;
+            h1 {
+                color: white;
+                padding-top: 86px;
+                padding-bottom: 40px;
+            }
+            & > p {
+                color: white;
+                font-size: 25px;
+                padding-bottom: 40px;
+                width: 660px;
+                max-width: 100%;
+            }
+            hr{
+                width: 40px;
+                color: white;
+                opacity: 2;
+                height: 3px;
+            }
+        }
+        .keeptouchbody {
+            .ourinfo {
+                margin-top: 45px;
+                margin-left: 30px;
+                padding-bottom: 35px;
+                p {
+                    display: flex;
+                    color: white;
+                    text-align: center;
+                    span {
+                        display: block;
+                        width: 160px;
+                    }
+                    svg {
+                        width: 100%;
+                        height: 100vh;
+                        width: 30px;
+                        height: 30px;
+                        color: #be9d1c;
+                    }
+                }
+            }
+            form {
+                margin-bottom: 60px;
+                margin-top: 40px;
+                margin-right: 45px;
+                .formcont {
+                    padding: 0;
+                    input {
+                        margin-bottom: 15px;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: #e7d531;
+                    }
+                }
+                & > input[type="text"]{
+                    width: 100%;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #e7d531;
+                    margin-bottom: 15px;
+                    @include paddingmaker(10px, 0, 10px, 10px)
+                }
+                textarea{
+                    width: 100%;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #e7d531;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                }
+                .btn {
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #e7d531;
+                    color: yellow;
+                    margin-top: 15px;
+                    @include paddingmaker(10px, 30px, 10px, 30px)
+                }
+            }
+        }
+        .rights {
+            padding-top: 25px;
+            p {
+                span {
+                    color: #918943;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:365px){
+    body {
+        header {
+            .myheaderbody {
+                .mybuttons2 {
+                    .mydownloadbtn {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    body {
+        section{
+            .mycarousel{
+                .carousel-inner {
+                    .carousel-item{
+                        .mycrcapt {
+                            padding-bottom: 80px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}
+
+@media screen and (max-width: 576px){
+    body {
+        footer {
+            .keeptouch {
+                .ourinfo {
+                    p {
+                        display: block;
+                        margin: auto;
+                        padding-top: 50px;
+                        span {
+                            padding-top: 20px;
+                            display: block;
+                            margin: auto;
+                        }
+                    }
+                }
+                form {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

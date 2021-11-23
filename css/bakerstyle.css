@@ -1,0 +1,365 @@
+body header {
+  background-image: url(https://images.immediate.co.uk/production/volatile/sites/4/2010/07/GettyImages-1007206866-ef4f1ee.jpg?quality=90&resize=940%2C400);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #323b4a;
+  opacity: 0.76;
+}
+body header .mynavbar {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+body header .mynavbar .mycontainer {
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 0;
+  padding-left: 15px;
+}
+body header .mynavbar .mycontainer .bakerlogo span {
+  font-size: 28px;
+}
+body header .mynavbar .mycontainer .bakerlogo span:first-child {
+  color: #f9fcff;
+}
+body header .mynavbar .mycontainer .bakerlogo span:last-child {
+  color: #c49b25;
+}
+body header .mynavbar .mycontainer .collapse .navbar-nav a {
+  padding-left: 20px;
+  color: white;
+}
+body header .mynavbar .mycontainer .collapse .navbar-nav a:hover {
+  color: #c49b25;
+}
+body header .myheaderbody {
+  padding-bottom: 180px;
+}
+body header .myheaderbody h3 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 25px;
+}
+body header .myheaderbody h1 {
+  padding-bottom: 40px;
+  font-size: 50px;
+}
+body header .myheaderbody h3, body header .myheaderbody h1, body header .myheaderbody p {
+  color: white;
+}
+body header .myheaderbody p {
+  width: 93%;
+  font-size: 17px;
+}
+body header .myheaderbody .mybuttons2 {
+  padding-top: 65px;
+}
+body header .myheaderbody .mybuttons2 .mydownloadbtn {
+  padding-top: 13px;
+  padding-right: 30px;
+  padding-bottom: 13px;
+  padding-left: 30px;
+  background-color: #c49b25;
+  font-size: 14px;
+  margin-right: 26px;
+  margin-bottom: 15px;
+}
+body header .myheaderbody .mybuttons2 .mylearnbtn {
+  padding-top: 13px;
+  padding-right: 30px;
+  padding-bottom: 13px;
+  padding-left: 30px;
+  background-color: transparent;
+  font-size: 15px;
+  margin-bottom: 15px;
+  border-color: #c49b25;
+  color: #c49b25;
+}
+body header svg {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+  color: white;
+}
+body section .mysectioncont .bulbrow {
+  --bs-gutter-x: 0;
+  margin-top: 66px;
+  margin-bottom: 76px;
+}
+body section .mysectioncont .bulbrow .col-md-3 img, body section .mysectioncont .bulbrow .col-6 img {
+  width: 33%;
+}
+body section .wwd {
+  background-color: #f3f4f8;
+}
+body section .wwd h1 {
+  color: #68696d;
+  padding-top: 86px;
+  padding-bottom: 40px;
+}
+body section .wwd > p {
+  font-size: 25px;
+  padding-bottom: 40px;
+  width: 660px;
+  max-width: 100%;
+}
+body section .wwd hr {
+  width: 40px;
+  color: #bb9708;
+  opacity: 2;
+  height: 3px;
+}
+body section .wwd .container-fluid .row .col-lg-3, body section .wwd .container-fluid .row .col-sm-6 {
+  padding-left: 30px;
+}
+body section .wwd .container-fluid .row .col-lg-3 .card .card-body h5, body section .wwd .container-fluid .row .col-sm-6 .card .card-body h5 {
+  color: #626367;
+  font-size: 30px;
+}
+body section .wwd .container-fluid .row .col-lg-3 .card .card-body h5 span, body section .wwd .container-fluid .row .col-sm-6 .card .card-body h5 span {
+  font-size: 80px;
+  color: #929397;
+}
+body section .wwd .container-fluid .row .col-lg-3 .card .card-body p, body section .wwd .container-fluid .row .col-sm-6 .card .card-body p {
+  padding-bottom: 30px;
+  color: #b1b2b6;
+  font-size: 18px;
+}
+body section .wwd .container-fluid .row .col-lg-3 .card .card-body a, body section .wwd .container-fluid .row .col-sm-6 .card .card-body a {
+  color: #c49b25;
+}
+body section .ourrecentw h1 {
+  color: #68696d;
+  padding-top: 86px;
+  padding-bottom: 40px;
+}
+body section .ourrecentw > p {
+  font-size: 25px;
+  padding-bottom: 40px;
+  width: 660px;
+  max-width: 100%;
+}
+body section .ourrecentw hr {
+  width: 40px;
+  color: #bb9708;
+  opacity: 2;
+  height: 3px;
+}
+body section .ourrecentw .row {
+  margin-top: 40px;
+  margin-bottom: 75px;
+}
+body section .ourrecentw .row .col-md-4 .card img, body section .ourrecentw .row .col-12 .card img {
+  margin-bottom: 15px;
+  height: 284px;
+  object-fit: cover;
+  object-position: center;
+}
+body section .mycarousel {
+  height: 390px;
+  margin-bottom: 86px;
+}
+body section .mycarousel .carousel-inner .carousel-item .mycrcapt {
+  padding-bottom: 30px;
+}
+body section .mycarousel .carousel-inner .carousel-item .mycrcapt .face img {
+  object-fit: cover;
+  object-position: center;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50%;
+}
+body section .mycarousel .carousel-inner .carousel-item .mycrcapt p {
+  font-size: 20px;
+}
+body section .mycarousel .carousel-inner .carousel-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #313a49;
+  opacity: 0.9;
+}
+body section .mycarousel .carousel-inner .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+}
+body section .latestnews h1 {
+  color: #68696d;
+  padding-bottom: 40px;
+}
+body section .latestnews > p {
+  font-size: 25px;
+  padding-bottom: 40px;
+  width: 660px;
+  max-width: 100%;
+}
+body section .latestnews hr {
+  width: 40px;
+  color: #bb9708;
+  opacity: 2;
+  height: 3px;
+}
+body section .latestnews .container-fluid .row {
+  margin-right: 0;
+  padding-top: 40px;
+  padding-bottom: 66px;
+}
+body section .latestnews .container-fluid .row .col-md-4 .card img, body section .latestnews .container-fluid .row .col-12 .card img {
+  height: 196px;
+  object-fit: cover;
+  object-position: center;
+}
+body section .latestnews .container-fluid .row .col-md-4 .card .card-body h5, body section .latestnews .container-fluid .row .col-12 .card .card-body h5 {
+  font-size: 30px;
+  color: #575757;
+  padding-bottom: 28px;
+}
+body section .latestnews .container-fluid .row .col-md-4 .card .card-body .card-text, body section .latestnews .container-fluid .row .col-12 .card .card-body .card-text {
+  color: #969696;
+}
+body section .latestnews .container-fluid .row .col-md-4 .card .card-body .card-text span, body section .latestnews .container-fluid .row .col-12 .card .card-body .card-text span {
+  padding-right: 150px;
+}
+body section .latestnews .container-fluid .row .col-md-4 .card .card-body .btn, body section .latestnews .container-fluid .row .col-12 .card .card-body .btn {
+  color: #969696;
+}
+body footer .keeptouch {
+  background-color: #495468;
+}
+body footer .keeptouch h1 {
+  color: white;
+  padding-top: 86px;
+  padding-bottom: 40px;
+}
+body footer .keeptouch > p {
+  color: white;
+  font-size: 25px;
+  padding-bottom: 40px;
+  width: 660px;
+  max-width: 100%;
+}
+body footer .keeptouch hr {
+  width: 40px;
+  color: white;
+  opacity: 2;
+  height: 3px;
+}
+body footer .keeptouchbody .ourinfo {
+  margin-top: 45px;
+  margin-left: 30px;
+  padding-bottom: 35px;
+}
+body footer .keeptouchbody .ourinfo p {
+  display: flex;
+  color: white;
+  text-align: center;
+}
+body footer .keeptouchbody .ourinfo p span {
+  display: block;
+  width: 160px;
+}
+body footer .keeptouchbody .ourinfo p svg {
+  width: 100%;
+  height: 100vh;
+  width: 30px;
+  height: 30px;
+  color: #be9d1c;
+}
+body footer .keeptouchbody form {
+  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-right: 45px;
+}
+body footer .keeptouchbody form .formcont {
+  padding: 0;
+}
+body footer .keeptouchbody form .formcont input {
+  margin-bottom: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e7d531;
+}
+body footer .keeptouchbody form > input[type=text] {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e7d531;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+body footer .keeptouchbody form textarea {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e7d531;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+body footer .keeptouchbody form .btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e7d531;
+  color: yellow;
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+body footer .rights {
+  padding-top: 25px;
+}
+body footer .rights p span {
+  color: #918943;
+}
+
+@media screen and (max-width: 365px) {
+  body header .myheaderbody .mybuttons2 .mydownloadbtn {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  body section .mycarousel .carousel-inner .carousel-item .mycrcapt {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 576px) {
+  body footer .keeptouch .ourinfo p {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+  body footer .keeptouch .ourinfo p span {
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+  }
+  body footer .keeptouch form {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=bakerstyle.css.map */
