@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(9, 7, 24);
+    height: 100vh;
+}
+
+/* button style default and after event start */
+.high, .mid, .low {
+    width: 80px;
+    height: 8px;
+    background-color: coral;
+    margin-bottom: 10px;
+    transition: all 1.4s;
+}
+
+.mybtn {
+    top: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    transition: all 1.4s;
+}
+
+.myActiveBtn {
+    top: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 600px;
+}
+
+.myActiveBtn .mid {
+    transform: rotate(45deg);
+    position: absolute;
+    margin-bottom: -8px;
+}
+
+.myActiveBtn .high {
+    transform: rotate(45deg);
+    margin-bottom: -8px;
+}
+
+.myActiveBtn .low {
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+}
+/* button style default and after event end */
+
+/* orange menu style start */
+.menu {
+    background-color: tomato;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    transition: all 1.4s;
+}
+.menuActive {
+    background-color: tomato;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+}
+/* orange menu style end */
+
+
+/* list dropdown start */
+.drop {
+    position: absolute;
+    transition: all 2s;
+    right: 0;
+    top: 200px;
+}
+.drop li{
+    list-style: none;
+    transition: all .6s;
+    position: absolute;
+    top: 0px;
+    width: 100px;
+    opacity: 0;
+}
+.drop li a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+.dropActive {
+    right: 200px;
+}
+.dropActive li{
+    transition: all 1.8s;
+    opacity: 1;
+}
+.dropActive li:nth-child(2) {
+    top: 60px;
+}
+.dropActive li:nth-child(3) {
+    top: 120px;
+}
+.dropActive li:nth-child(4) {
+    top: 180px;
+}
+/* list dropdown start */
+
+.horline {
+    height: 3px;
+    width: 0;
+    transition: all 1.4s;
+    background-color: white;
+}
+
+.horActive {
+    width: 90%;
+}
