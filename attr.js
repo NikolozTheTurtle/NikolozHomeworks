@@ -17,7 +17,7 @@ reset.addEventListener("click", function(){
 
 
 
-// password task DOWN!!!!!!!!!!
+// password task DOWN!!!!!!!!
 // general variables START
 let icon = document.querySelector(".icon");
 let input = document.querySelector("input");
