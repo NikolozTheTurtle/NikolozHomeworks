@@ -1,0 +1,67 @@
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 4px 2px 3px gray;
+}
+
+.center {
+    border-radius: 10px;
+    margin: auto;
+    width: 99%;
+    height: calc(100vh - 40px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.8s;
+}
+
+.resetbtn {
+    color: white;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.myform {
+    padding-bottom: 200px;
+}
+
+.myform h1, .myform p {
+    text-align: center;
+}
+.myform p {
+    color: gray;
+}
+.icon {
+    position: absolute;
+    right: 20%;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+.icon svg {
+    width: 100%; 
+    height: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.myform form input {
+    width: 80%;
+    border: 0;
+    border-bottom: 2px solid;
+}
+
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
