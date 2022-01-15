@@ -12,8 +12,8 @@ form.addEventListener("submit", function (e) {
   let forAdd = `<div class="row my-row" id="my-row-${id + 1}">
   <div class="col-lg-8" id="content-text-${id + 1}">${val}</div>
   <div class="col-lg-4 icons">
-      <i class="bi bi-pencil-fill" data-id="${id + 1}"></i>
-      <i class="bi bi-x-circle-fill" data-id="${id + 1}"></i>
+      <i class="bi bi-pencil-fill" data-id="${id + 1}">Edit</i>
+      <i class="bi bi-x-circle-fill" data-id="${id + 1}">Delete</i>
   </div>
 </div>`;
   // creation of element END!!!!!
