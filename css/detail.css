@@ -1,0 +1,60 @@
+body {
+    background-color: hsl(0deg 0% 90%);
+}
+
+.container {
+    width: 800px;
+}
+
+.my-card {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(209, 208, 208);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.my-card-start {
+    height: 100px;
+}
+
+.my-card-end {
+    height: auto;
+    background-color: hsl(210deg 13% 97%);
+}
+.answer p {
+    padding: 10px 0px 40px 50px;
+    opacity: 0;
+    font-size: 18px;
+    color: gray;
+}
+
+.answer-shown p {
+    opacity: 1;
+}
+
+.my-header {
+    padding: 35px 0px 0px 50px;
+    font-size: 23px;
+    position: relative;
+}
+
+.svg-class {
+    transform: rotate(90deg);
+}
+
+.bi-chevron-down {
+    position: absolute;
+    right: 20px;
+    transition: transform .3s;
+    color: hsl(269deg 36% 47%);
+}
+
+
+.bi-x-circle-fill {
+    color: hsl(269deg 36% 47%);
+    position: absolute;
+    bottom: -20px;
+    transform: translateY(-50px);
+    transition: transform .6s;
+}

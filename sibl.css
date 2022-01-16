@@ -1,0 +1,43 @@
+body {
+    background-color: #f0f2fb;
+}
+
+.par-row {
+    margin-top: 100px;
+}
+
+.big-col {
+    margin: auto;
+}
+
+.inside-col {
+    cursor: pointer;
+    font-size: 18px;
+}
+.inside-col:nth-child(1){
+    border-top-left-radius: 10px;
+}
+
+.inside-col:nth-child(3){
+    border-top-right-radius: 10px;
+}
+
+.inside-col {
+    background-color: #bdc9e2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.content-row {
+    padding: 20px 10px 10px 10px;
+}
+
+.active {
+    transition: all .3s;
+    background-color: white;
+}
+
+.inside-col:not(.active):hover {
+    transition: all 0.6s;
+    background-color: #e2e5ec;
+}
