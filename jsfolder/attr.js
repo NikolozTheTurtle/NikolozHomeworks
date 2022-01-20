@@ -90,7 +90,7 @@ input.addEventListener("input", function(){
             }else if(el.charCodeAt() >= 33){
                 checkSym = true;
             }
-        }
+        };
         if (checkCap && checkLow && checkNum && checkSym){
             // case when everything is correct!!!
             passBott.innerHTML = `Your password passed! Password rules are not meant to be broken!`;
