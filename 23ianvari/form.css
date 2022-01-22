@@ -1,0 +1,129 @@
+body {
+  font-family: sans-serif;
+}
+body .container {
+  background-color: black;
+}
+body .container .my-row {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  height: 560px;
+}
+body .container .my-row .sign-in-col {
+  position: relative;
+  z-index: 3;
+  width: 65%;
+  text-align: center;
+  background-color: #e6e6e6;
+  transition: all 0.6s;
+}
+body .container .my-row .sign-in-col .sign-in h3 {
+  padding-bottom: 30px;
+  padding-top: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+body .container .my-row .sign-in-col .sign-in .form-header-active {
+  opacity: 1;
+}
+body .container .my-row .sign-in-col .sign-in .icons {
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+body .container .my-row .sign-in-col .sign-in .icons a i {
+  color: gray;
+}
+body .container .my-row .sign-in-col .sign-in .small-p {
+  font-size: 13px;
+  color: #b1afaf;
+  padding-bottom: 20px;
+}
+body .container .my-row .sign-in-col .sign-in form input {
+  margin: auto;
+  width: 50%;
+}
+body .container .my-row .sign-in-col .sign-in form input:not(input:last-child) {
+  margin-bottom: 10px;
+}
+body .container .my-row .sign-in-col .sign-in form .name-input {
+  display: none;
+}
+body .container .my-row .sign-in-col .sign-in .big-p {
+  width: fit-content;
+  margin: auto;
+  padding-top: 15px;
+  border-bottom: 1px solid black;
+  display: none;
+  transition: all 0.9s;
+}
+body .container .my-row .sign-in-col .sign-in .forgot-shown {
+  transition: all 0.9s;
+  display: inline-block;
+}
+body .container .my-row .sign-in-col .sign-in .form-btn {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: fit-content;
+  padding: 10px 50px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  background-color: #4c6fe1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+body .container .my-row .sign-in-col .sign-in .active-form-btn {
+  opacity: 1;
+}
+body .container .my-row .hello-col {
+  transition: all 0.6s;
+  position: relative;
+  background-color: gray;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+body .container .my-row .hello-col .hello {
+  text-align: center;
+}
+body .container .my-row .hello-col .hello h3 {
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  transition: all 0.8s;
+}
+body .container .my-row .hello-col .hello .active-h3 {
+  opacity: 1;
+}
+body .container .my-row .hello-col .hello p {
+  padding: 20px 80px 40px 80px;
+}
+body .container .my-row .hello-col .hello .click-butn {
+  text-decoration: none;
+  color: white;
+  display: none;
+  width: fit-content;
+  padding: 10px 50px;
+  margin: auto;
+  border-radius: 50px;
+  background-color: #4c6fe1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .container .my-row .hello-col .hello .active-butn {
+  display: block;
+}
+
+/*# sourceMappingURL=form.css.map */

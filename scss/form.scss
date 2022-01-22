@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  .container {
+    background-color: black;
+    .my-row {
+      display: flex;
+      margin-top: 40px;
+      width: 100%;
+      height: 560px;
+      .sign-in-col {
+        position: relative;
+        z-index: 3;
+        width: 65%;
+        text-align: center;
+        background-color: hsl(0, 0%, 90%);
+        transition: all .6s;
+        .sign-in {
+          h3 {
+            padding-bottom: 30px;
+            padding-top: 100px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0%;
+            opacity: 0;
+            transition: all .4s;
+          }
+          .form-header-active {
+            opacity: 1;
+          }
+          .icons {
+            margin-top: 150px;
+            a {
+              i {
+                color: gray;
+              }
+            }
+            margin-bottom: 20px;
+          }
+          .small-p {
+            font-size: 13px;
+            color: rgb(177, 175, 175);
+            padding-bottom: 20px;
+          }
+          form {
+            input {
+              margin: auto;
+              width: 50%;
+            }
+            input:not(input:last-child) {
+              margin-bottom: 10px;
+            }
+            .name-input {
+              display: none;
+            }
+          }
+          .big-p {
+            width: fit-content;
+            margin: auto;
+            padding-top: 15px;
+            border-bottom: 1px solid black;
+            display: none;
+            transition: all 0.9s;
+          }
+          .forgot-shown {
+            transition: all 0.9s;
+            display: inline-block;
+          }
+          .form-btn {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: fit-content;
+            padding: 10px 50px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 50px;
+            border-radius: 50px;
+            background-color: hsl(226deg 71% 59%);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+          }
+          
+          .active-form-btn {
+            opacity: 1;
+          }
+        }
+      }
+      .hello-col {
+        transition: all .6s;
+        position: relative;
+        background-color: gray;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        .hello {
+          text-align: center;
+          h3 {
+              position: absolute;
+              opacity: 0;
+              left: 50%;
+              top: 30%;
+            transform: translateX(-50%);
+            transition: all .8s;
+          }
+          .active-h3 {
+              opacity: 1;
+          }
+          p {
+            padding: 20px 80px 40px 80px;
+          }
+          .click-butn{
+              text-decoration: none;
+              color: white;
+              display: none;
+              width: fit-content;
+              padding: 10px 50px;
+              margin: auto;
+              border-radius: 50px;
+              background-color: hsl(226deg 71% 59%);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .active-butn {
+              display: block;
+          }
+        }
+      }
+    }
+  }
+}
