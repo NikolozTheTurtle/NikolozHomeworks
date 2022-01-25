@@ -1,7 +1,9 @@
 let btns = document.querySelectorAll(".lvl-btn");
 let ball = document.querySelector(".ball");
 let reset = document.querySelector(".change");
+let again = document.querySelector(".again");
 let point = 0;
+let winnerPoint = 5;
 
 btns.forEach((el) => {
   el.addEventListener("click", function () {
@@ -36,18 +38,70 @@ reset.addEventListener("click", function () {
 
 document.addEventListener("click", function (ele) {
   let obj = ele.target;
-  let safeWidth = document.querySelector(".safe-zone").getBoundingClientRect().width;
-  let safeHeight = document.querySelector(".safe-zone").getBoundingClientRect().height;
+  let safeWidth = document
+    .querySelector(".safe-zone")
+    .getBoundingClientRect().width;
+  let safeHeight = document
+    .querySelector(".safe-zone")
+    .getBoundingClientRect().height;
   if (obj.classList[0] == "ball") {
-    if (obj.getBoundingClientRect().bottom  > (safeWidth + obj.getBoundingClientRect().width) || obj.getBoundingClientRect().right  > (safeHeight + obj.getBoundingClientRect().height)){
+    if (
+      obj.getBoundingClientRect().bottom >
+        safeWidth + obj.getBoundingClientRect().width ||
+      obj.getBoundingClientRect().right >
+        safeHeight + obj.getBoundingClientRect().height
+    ) {
       obj.classList.add("green");
-    setTimeout(delGreen, 1000);
-    function delGreen() {
-      obj.classList.remove("green");
-    }
-    point++;
-    console.log();
-    document.querySelector(".points").innerHTML = `Points: ${point}`;
+      setTimeout(delGreen, 1000);
+      function delGreen() {
+        obj.classList.remove("green");
+      }
+      point++;
+      setTimeout(winner, 300);
+      function winner() {
+        if (point == winnerPoint) {
+          document.querySelectorAll("div").forEach((el) => {
+            el.classList.add("d-none");
+          });
+          document.querySelector(".change").classList.add("d-none");
+          document.querySelector(".points").classList.add("d-none");
+          document.querySelector(".win-text").classList.add("win-text-win");
+        }
+      }
+      console.log();
+      document.querySelector(".points").innerHTML = `Points: ${point}`;
     }
   }
 });
+
+// play again click event START!!!
+again.addEventListener("click", function () {
+  document.querySelector(".start-screen").classList.remove("d-none");
+  document.querySelector(".start-screen").classList.remove("hidden");
+  document.querySelector(".win-text").classList.remove("d-none");
+  document.querySelector(".win-text").classList.remove("win-text-win");
+  document.querySelector(".safe-zone").classList.remove("d-none");
+  document.querySelector(".safe-zone").classList.remove("s-zone-act");
+  document.querySelector(".points").classList.remove("d-none");
+  document.querySelector(".points").classList.remove("points-shown");
+  document.querySelector(".change").classList.remove("d-none");
+  document.querySelector(".change").classList.remove("change-shown");
+  ball.classList.remove("ball-normal");
+  ball.classList.remove("d-none");
+  ball.classList.remove("ball-easy");
+  ball.classList.remove("ball-hard");
+  ball.classList.remove("ball-insane");
+  point = 0;
+});
+// play again click event END!!!
+
+function winner(p) {
+  if (p == winnerPoint) {
+    document.querySelectorAll("div").forEach((el) => {
+      el.classList.add("d-none");
+    });
+    document.querySelector(".change").classList.add("d-none");
+    document.querySelector(".points").classList.add("d-none");
+    document.querySelector(".win-text").classList.add("win-text-win");
+  }
+}

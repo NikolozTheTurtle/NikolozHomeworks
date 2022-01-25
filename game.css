@@ -1,9 +1,11 @@
 body {
     margin-top: 0;
+    background-color: rgb(133 205 202);
 }
 
 h1 {
     text-align: center;
+    color: rgb(226 125 95);
 }
 .zone-m-0 {
     margin-bottom: 0;
@@ -13,18 +15,24 @@ h1 {
     font-family: sans-serif;
     cursor: default;
 }
+#choose-h1 {
+    padding-bottom: 50px;
+}
 #no {
     padding-top: 20px;
 }
 button {
     display: block;
     margin: auto;
-    background-color: aqua;
+    background-color: rgb(195 141 157);
     border: 0;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
 }
 .hidden {
     display: none;
@@ -55,6 +63,13 @@ button {
 .points-shown {
     display: inline-block;
 }
+.start-screen {
+    padding-top: 100px;
+}
+.start-screen h1 {
+    font-family: sans-serif;
+    font-weight: lighter;
+}
 .safe-zone {
     position: absolute;
     top: 0;
@@ -68,13 +83,39 @@ button {
 .s-zone-act {
     display: block;
 }
+.d-none {
+    display: none;
+}
+.win-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    display: none;
+}
+.win-text h1 {
+    margin-bottom: 0;
+    font-size: 50px;
+}
+.win-text p {
+    font-size: 20px;
+    color: rgb(195 141 157);
+    padding-bottom: 20px;
+}
+.win-text-win {
+    display: block;
+}
+.win-text button {
+    color: rgb(44, 38, 38);
+}
 
 .ball {
     position: absolute;
     top: 0;
     left: 0;
     border-radius: 50%;
-    background-color: red;
+    background-color: rgb(225 79 55);
     opacity: 0;
 }
 .ball-easy {
