@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+    
+    
+</head>
+<body>
+    <div class="start-screen">
+        <h1 id="choose-h1">Choose difficulty</h1>
+        <button type="button" class="lvl-btn btn-e" data-lvl="0">Easy</button>
+        <button type="button" class="lvl-btn btn-n" data-lvl="1">Normal</button>
+        <button type="button" class="lvl-btn btn-h" data-lvl="2">Hard</button>
+        <button type="button" class="lvl-btn btn-i" data-lvl="3">Insane</button>
+    </div>
+    <div class="safe-zone">
+        <p class="zone-m-0" id="no">No</p>
+        <p class="zone-m-0">Points</p>
+        <p class="zone-m-0">Here</p>
+    </div>
+    <div class="ball"></div>
+    <button type="button" class="change">Change difficulty</button>
+    <p class="points"></p>
+    <div class="win-text">
+        <h1 class="winner">YOU WON!</h1>
+        <p>Good Job</p>
+        <button type="button" class="again">Play Again</button>
+    </div>
+
+
+
+
+    <script src="game.js"></script>
+</body>
+</html>
