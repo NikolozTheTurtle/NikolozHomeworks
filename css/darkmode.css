@@ -1,0 +1,213 @@
+body {
+  font-family: sans-serif;
+}
+body .navbar {
+  border-bottom: 1px solid #b9b8b8;
+}
+body .navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+body .navbar .container .icon {
+  display: flex;
+  align-items: center;
+}
+body .navbar .container .icon .icon-ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+body .navbar .container .icon .icon-rec {
+  width: 100px;
+  height: 10px;
+}
+body .navbar .container .collapse {
+  justify-content: end;
+}
+body .navbar .container .collapse .navbar-nav {
+  align-items: center;
+}
+body .navbar .container .collapse .navbar-nav .nav-link {
+  text-decoration: underline;
+  font-family: sans-serif;
+}
+body .navbar .container .collapse .navbar-nav .nav-download {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: white !important;
+}
+body .navbar .container .collapse .navbar-nav .switch {
+  position: relative;
+  width: 70px;
+  height: 34px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+body .navbar .container .collapse .navbar-nav .switch .switch-ball {
+  position: absolute;
+  top: 3px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.4s;
+}
+body section .container .row {
+  margin-top: 60px;
+}
+body section .container .row .col-lg-6 {
+  height: 400px;
+  font-family: sans-serif;
+}
+body section .container .row .col-lg-6 h5 {
+  color: #b6b4b4;
+  font-weight: normal;
+  font-size: 14px;
+}
+body section .container .row .col-lg-6 h2 {
+  font-size: 60px;
+}
+body section .container .row .col-lg-6 p {
+  font-size: 22px;
+}
+body section .container .row .col-lg-6 .col-links {
+  display: flex;
+  align-items: center;
+}
+body section .container .row .col-lg-6 .col-links .my-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 20px;
+  color: white;
+}
+body section .container .row .col-lg-6 .col-links a {
+  font-size: 19px;
+}
+body section .container .row .col-lg-6 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+body section .container .add-remove-section {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+body section .container .add-remove-section h1 {
+  font-weight: normal;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+body section .container .add-remove-section .input-grid .input-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+body section .container .add-remove-section .input-grid .input-row input {
+  display: block;
+  width: 70%;
+  border: 1px solid gray;
+  border-right: 0;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding-left: 20px;
+  font-size: 23px;
+}
+body section .container .add-remove-section .input-grid .input-row input:focus-visible {
+  outline: 0;
+}
+body section .container .add-remove-section .input-grid .input-row button {
+  border: 0;
+  background-color: #ec5151;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 10px 15px;
+  color: white;
+}
+body section .container .add-remove-section .btn-add {
+  border: 0;
+  border-radius: 7px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #094242;
+}
+
+.light-mode .navbar .container .icon .icon-ball {
+  background-color: #4763e1;
+}
+.light-mode .navbar .container .icon .icon-rec {
+  background-color: #1b1a1f;
+}
+.light-mode .navbar .container .collapse .navbar-nav .nav-link {
+  color: black;
+}
+.light-mode .navbar .container .collapse .navbar-nav .nav-download {
+  background-color: #4763e1;
+}
+.light-mode .navbar .container .collapse .navbar-nav .switch {
+  background-color: #cfcfcf;
+}
+.light-mode .navbar .container .collapse .navbar-nav .switch .switch-ball {
+  left: 3px;
+}
+.light-mode .navbar .container .collapse .navbar-nav .nav-act {
+  color: #4763e1;
+}
+.light-mode section .container .row .col-lg-6 h2,
+.light-mode section .container .row .col-lg-6 p {
+  color: black;
+}
+.light-mode section .container .row .col-lg-6 .col-links .my-btn {
+  background-color: #4763e1;
+}
+.light-mode section .container .row .col-lg-6 .col-links a {
+  color: black;
+}
+.light-mode section .container .add-remove-section h1 {
+  color: black;
+}
+
+.dark-mode {
+  background-color: #1b1a1f;
+}
+.dark-mode .navbar .container .icon .icon-ball {
+  background-color: #ec467d;
+}
+.dark-mode .navbar .container .icon .icon-rec {
+  background-color: white;
+}
+.dark-mode .navbar .container .collapse .navbar-nav .nav-link {
+  color: #ffff;
+}
+.dark-mode .navbar .container .collapse .navbar-nav .nav-download {
+  background-color: #ec467d;
+}
+.dark-mode .navbar .container .collapse .navbar-nav .switch {
+  background-color: #ec467d;
+}
+.dark-mode .navbar .container .collapse .navbar-nav .switch .switch-ball {
+  left: calc(100% - 31px);
+}
+.dark-mode .navbar .container .collapse .navbar-nav .nav-act {
+  color: #ec467d;
+}
+.dark-mode section .container .row .col-lg-6 h2,
+.dark-mode section .container .row .col-lg-6 p {
+  color: #ffff;
+}
+.dark-mode section .container .row .col-lg-6 .col-links .my-btn {
+  background-color: #ec467d;
+}
+.dark-mode section .container .row .col-lg-6 .col-links a {
+  color: #ffff;
+}
+.dark-mode section .container .add-remove-section h1 {
+  color: #ffff;
+}
+
+/*# sourceMappingURL=darkmode.css.map */

@@ -1,0 +1,271 @@
+$dark-items-back-color: hsl(340deg 81% 60%);
+$dark-text-color: #ffff;
+$dark-background: hsl(252deg 9% 11%);
+$light-items-back-color: hsl(229deg 72% 58%);
+$light-text-color: black;
+$light-background: white;
+$light-switch-back: hsl(0deg 0% 81%);
+
+body {
+  font-family: sans-serif;
+  .navbar {
+    border-bottom: 1px solid rgb(185, 184, 184);
+    .container {
+      display: flex;
+      justify-content: space-between;
+      .icon {
+        display: flex;
+        align-items: center;
+        .icon-ball {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        .icon-rec {
+          width: 100px;
+          height: 10px;
+        }
+      }
+      .collapse {
+        justify-content: end;
+        .navbar-nav {
+          align-items: center;
+          .nav-link {
+            text-decoration: underline;
+            font-family: sans-serif;
+          }
+          .nav-download {
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-right: 20px;
+            margin-left: 20px;
+            color: white !important; 
+          }
+          .switch {
+            position: relative;
+            width: 70px;
+            height: 34px;
+            border-radius: 20px;
+            margin-top: 5px;
+            .switch-ball {
+              position: absolute;
+              top: 3px;
+              width: 28px;
+              height: 28px;
+              border-radius: 50%;
+              background-color: white;
+              transition: all .4s;
+            }
+          }
+        }
+      }
+    }
+  }
+  section {
+    .container {
+      .row {
+        margin-top: 60px;
+        .col-lg-6 {
+          height: 400px;
+          font-family: sans-serif;
+          h5 {
+            color: rgb(182, 180, 180);
+            font-weight: normal;
+            font-size: 14px;
+          }
+          h2 {
+            font-size: 60px;
+          }
+          p {
+            font-size: 22px;
+          }
+          .col-links {
+            display: flex;
+            align-items: center;
+            .my-btn {
+              display: inline-block;
+              padding: 10px 20px;
+              border-radius: 6px;
+              text-decoration: none;
+              margin-right: 20px;
+              color: white;
+            }
+            a {
+              font-size: 19px;
+            }
+          }
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+      .add-remove-section {
+        margin-top: 200px;
+        margin-bottom: 200px;
+        h1 {
+          font-weight: normal;
+          font-size: 30px;
+          padding-bottom: 20px;
+        }
+        .input-grid {
+          .input-row {
+            display: flex;
+            margin-bottom: 20px;
+            input{
+              display: block;
+              width: 70%;
+              border: 1px solid gray;
+              border-right: 0;
+              border-top-left-radius: 7px;
+              border-bottom-left-radius: 7px;
+              padding-left: 20px;
+              font-size: 23px;
+            }
+            input:focus-visible {
+              outline: 0;
+            }
+            button {
+              border: 0;
+              background-color: rgb(236, 81, 81);
+              border-top-right-radius: 7px;
+              border-bottom-right-radius: 7px;
+              padding: 10px 15px;
+              color: white;
+            }
+          }
+        }
+        .btn-add {
+          border: 0;
+          border-radius: 7px;
+          padding: 10px 20px;
+          color: white;
+          background-color: rgb(9, 66, 66);
+        }
+      }
+    }
+  }
+}
+
+.light-mode {
+  .navbar {
+    .container {
+      .icon {
+        .icon-ball {
+          background-color: $light-items-back-color;
+        }
+        .icon-rec {
+          background-color: $dark-background;
+        }
+      }
+      .collapse {
+        .navbar-nav {
+            .nav-link {
+                color: $light-text-color;
+            }
+          .nav-download {
+            background-color: $light-items-back-color;
+          }
+          .switch {
+            background-color: $light-switch-back;
+            .switch-ball {
+                left: 3px;
+            }
+          }
+          .nav-act {
+            color: $light-items-back-color;
+          }
+        }
+      }
+    }
+  }
+  section {
+    .container {
+      .row {
+        .col-lg-6 {
+          h2,
+          p {
+            color: $light-text-color;
+          }
+          .col-links {
+            .my-btn {
+              background-color: $light-items-back-color;
+            }
+            a {
+              color: $light-text-color;
+            }
+          }
+        }
+      }
+      .add-remove-section {
+        h1 {
+          color: $light-text-color;
+        }
+      }
+    }
+  }
+}
+
+.dark-mode {
+  background-color: $dark-background;
+  .navbar {
+    .container {
+      .icon {
+        .icon-ball {
+          background-color: $dark-items-back-color;
+        }
+        .icon-rec {
+          background-color: $light-background;
+        }
+      }
+      .collapse {
+        .navbar-nav {
+            .nav-link {
+                color: $dark-text-color;
+            }
+          .nav-download {
+            background-color: $dark-items-back-color;
+          }
+          .switch {
+            background-color: $dark-items-back-color;
+            .switch-ball {
+                left: calc(100% - 31px);
+            }
+          }
+          .nav-act {
+            color: $dark-items-back-color;
+          }
+        }
+      }
+    }
+  }
+  section {
+    .container {
+      .row {
+        .col-lg-6 {
+          h2,
+          p {
+            color: $dark-text-color;
+          }
+          .col-links {
+            .my-btn {
+              background-color: $dark-items-back-color;
+            }
+            a {
+              color: $dark-text-color;
+            }
+          }
+        }
+      }
+      .add-remove-section {
+        h1 {
+          color: $dark-text-color;
+        }
+      }
+    }
+  }
+}
