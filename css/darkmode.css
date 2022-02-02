@@ -136,6 +136,49 @@ body section .container .add-remove-section .btn-add {
   color: white;
   background-color: #094242;
 }
+body .printing-section {
+  background-color: #0a1517;
+  padding-bottom: 200px;
+}
+body .printing-section .container form {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+body .printing-section .container form input {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 10px 0px 10px 8px;
+  width: 70%;
+  color: white;
+}
+body .printing-section .container .print-submit {
+  background-color: transparent;
+  border-radius: 9px;
+  border: solid 1px aqua;
+  color: white;
+  margin-top: 20px;
+  display: block;
+  padding: 6px 15px;
+}
+body .printing-section .container .printed {
+  text-align: center;
+  color: white;
+  position: relative;
+  font-size: 20px;
+}
+body .printing-section .container .printed .char-span {
+  opacity: 0;
+}
+body .printing-section .container .printed .char-act {
+  opacity: 1;
+}
+body .printing-section .container .printed .print-rec {
+  width: 9px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+}
 
 .light-mode .navbar .container .icon .icon-ball {
   background-color: #4763e1;

@@ -149,7 +149,57 @@ body {
       }
     }
   }
+  .printing-section {
+    background-color: #0a1517;
+    padding-bottom: 200px;
+    .container {
+      form {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        input {
+          background-color: transparent;
+          border: 1px solid white;
+          border-radius: 6px;
+          padding: 10px 0px 10px 8px;
+          width: 70%;
+          color: white;
+        }
+      }
+      .print-submit {
+        background-color: transparent;
+        border-radius: 9px;
+        border: solid 1px aqua;
+        color: white;
+        margin-top: 20px;
+        display: block;
+        padding: 6px 15px;
+      }
+      .printed {
+        text-align: center;
+        color: white;
+        position: relative;
+        font-size: 20px;
+        .char-span {
+          opacity: 0;
+        }
+        .char-act {
+          opacity: 1;
+        }
+        .print-rec {
+          width: 9px;
+          background-color: white;
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+  }
 }
+
+
+
+
+
 
 .light-mode {
   .navbar {
@@ -209,6 +259,11 @@ body {
     }
   }
 }
+
+
+
+
+
 
 .dark-mode {
   background-color: $dark-background;
