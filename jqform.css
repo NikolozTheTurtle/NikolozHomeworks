@@ -1,96 +1,161 @@
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 .ball {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid hsl(6deg 78% 57%);
-    margin: auto;
-    cursor: default;
-    color: thistle;
-    position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid hsl(6deg 78% 57%);
+  margin: auto;
+  cursor: default;
+  color: thistle;
+  position: relative;
 }
 .ball i {
-    position: absolute;
-    z-index: 999;
+  position: absolute;
+  z-index: 999;
 }
 .cont {
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
 }
 .small-p {
-    text-align: center;
-    color: thistle;
+  text-align: center;
+  color: thistle;
 }
 .act-p {
-    color: hsl(6deg 78% 57%);
+  color: hsl(6deg 78% 57%);
 }
 .act-cont {
-    display: block;
+  display: block;
 }
 .act-ball {
-    background-color: hsl(6deg 78% 57%);
-    color: white;
-    font-weight: bolder;
+  background-color: hsl(6deg 78% 57%);
+  color: white;
+  font-weight: bolder;
 }
 .ball-row {
   padding-top: 200px;
 }
 .my-row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .next {
-    margin-left: auto;
+  margin-left: auto;
 }
 .d-none {
-    display: none;
+  display: none;
 }
 .btn-show-info {
-    background-color: rgb(59, 59, 175);
-    border-radius: 6px;
-    display: inline-block;
-    margin: auto;
-    padding: 6px 15px;
-    color: white;
-    margin-top: 10px;
+  background-color: rgb(59, 59, 175);
+  border-radius: 6px;
+  display: inline-block;
+  margin: auto;
+  padding: 6px 15px;
+  color: white;
+  margin-top: 10px;
 }
 .move-btn {
-    display: inline-block;
-    border: 0;
-    border-radius: 8px;
-    padding: 5px 50px;
-    background-color: hsl(6deg 78% 57%);
-    color: white;
-    margin-top: 20px;
+  display: inline-block;
+  border: 0;
+  border-radius: 8px;
+  padding: 5px 50px;
+  background-color: hsl(6deg 78% 57%);
+  color: white;
+  margin-top: 20px;
 }
 .search-input {
-    width: 100%;
-    border-radius: 30px;
-    border: 2px solid rgb(169, 169, 247);
-    padding: 10px 0 10px 20px;
+  width: 100%;
+  border-radius: 30px;
+  border: 2px solid rgb(169, 169, 247);
+  padding: 10px 0 10px 20px;
 }
 #cont3 {
-    margin-top: 22px;
+  margin-top: 22px;
 }
 .line {
-    position: absolute;
-    height: 3px;
-    background-color: hsl(6deg 78% 57%);
-    top: 224px;
-    left: 0;
+  position: absolute;
+  height: 3px;
+  background-color: hsl(6deg 78% 57%);
+  top: 224px;
+  left: 0;
 }
 .diametr {
-    position: absolute;
-    width: 46px;
-    height: 3px;
-    background-color: white;
-    z-index: 1;
+  position: absolute;
+  width: 46px;
+  height: 3px;
+  background-color: white;
+  z-index: 1;
 }
 .act-ball .diametr {
-    background-color: hsl(6deg 78% 57%);
+  background-color: hsl(6deg 78% 57%);
+}
+
+/* qvemot range davalebis code */
+section {
+    margin-top: 200px;
+  background-color: hsl(2deg 70% 51%);
+}
+.range-section {
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.range-col {
+  margin: auto;
+}
+.range-line {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  padding: 0;
+}
+.range-cursor {
+    position: absolute;
+    top: -39px !important;
+    transform: translateY(50%);
+    background-color: white;
+    height: 40px;
+    width: 20px;
+    border-radius: 20px;
+    left: 0;
+    /* transform: translateX(-10px); */
+}
+.range-numbers {
+    margin-top: 20px;
+    display: flex;
+    padding-left: 5px;
+    justify-content: space-between;
+    color: white;
+}
+/* .ui-draggable-handle {
+  bottom: 0 !important;
+} */
+/* .ui-draggable-dragging {
+  top: -39px !important;
+} */
+.calc-ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(calc(-50% + 10px));
+    bottom: 50px;
+    color: white;
+    text-align: center;
+}
+.kg {
+  font-size: 17px;
+}
+.count {
+  padding-top: 10px;
+  font-size: 25px;
 }
