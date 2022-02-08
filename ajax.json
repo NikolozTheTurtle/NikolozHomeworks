@@ -1,0 +1,37 @@
+[
+    {
+        "name": "ჯიგო",
+        "number": 1,
+        "photo": "imgs/man6.jpg"
+    },
+    {
+        "name": "ლუკა",
+        "number": 2,
+        "photo": "imgs/man3.jpg"
+    },
+    {
+        "name": "მარიამი",
+        "number": 3,
+        "photo": "imgs/fotoo.jpg"
+    },
+    {
+        "name": "ნიკა",
+        "number": 4,
+        "photo": "imgs/man7.jpg"
+    },
+    {
+        "name": "შაკო",
+        "number": 5,
+        "photo": "imgs/man4.jpg"
+    },
+    {
+        "name": "ჯეკო",
+        "number": 6,
+        "photo": "imgs/man1.jpg"
+    },
+    {
+        "name": "თემო",
+        "number": 7,
+        "photo": "imgs/man2.jpg"
+    }
+]

@@ -1,0 +1,71 @@
+.card img {
+    height: 215px;
+    object-fit: cover;
+    object-position: center;
+}
+section {
+    padding-bottom: 200px;
+}
+.my-dropdown {
+    width: 305px;
+    max-width: 100%;
+    margin-left: 100px;
+}
+.drop-btn {
+    border: 0;
+    background-color: rgb(245, 245, 245);
+    border-radius: 2px;
+    padding: 10px 20px;
+    border: 1px solid rgb(194, 193, 193);
+    width: 100%;
+}
+.caret-down-act {
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.ul-drop li {
+    cursor: pointer;
+    list-style: none;
+}
+.ul-drop li:hover {
+    background-color: rgb(245, 245, 245);
+}
+.li-item {
+    display: flex;
+}
+.social-bi {
+    font-size: 40px;
+    margin: 10px 20px;
+}
+.item-text {
+    padding-top: 15px;
+}
+.chosen-li {
+    background-color: rgb(245, 245, 245);
+}
+.item-text p{
+    text-align: start;
+}
+.item-text small {
+    color: gray;
+    font-size: 12px;
+}
+.ul-drop {
+    padding-left: 0;
+    display: none;
+    height: 0;
+    border: 1px solid rgb(194, 193, 193);
+}
+.my-dropdown ul li:not(li:last-child) {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px rgb(194, 193, 193) solid;
+}
+.dropped {
+    display: block;
+    height: 100%;
+}
+.chosen-btn {
+    display: flex;
+    padding: 0;
+}
