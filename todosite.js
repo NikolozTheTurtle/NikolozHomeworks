@@ -42,6 +42,15 @@ $(function () {
         }));
     });
     if (sessionStorage.getItem("token") != null) {
+        let timeout = setTimeout(() => {
+            alert("Move Mouse");
+        }, 10000);
+        $(document).on("mousemove", function () {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                alert("Move Mouse");
+            }, 10000);
+        });
         fetch(requestUrl, {
             method: "GET"
         }).then(response => response.json().then(data => {
@@ -58,15 +67,34 @@ $(function () {
             $(".number").html(`${userInfo.number}`);
             $(".email").html(`${userInfo.email}`);
         }));
+        fetch(`https://fakestoreapi.com/products/`, {
+            method: "GET"
+        }).then(response => response.json().then(data => {
+            data.forEach(el => {
+                let productCard = `<div class="product-col col-lg-4"><div class="card product-card" style="width: 100%;">
+  <img src="${el.image}" class="card-img-top product-img" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Title: ${el.title}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Price: ${el.price}</h6>
+    <p class="card-text">${el.description}</p>
+    <p class="mb-0 category-p">Category: ${el.category}</p>
+  </div></div></div>`;
+                $(".product-row").append(productCard);
+            });
+        }));
     };
     $(document).on("click", ".li-btn", function (e) {
         e.preventDefault();
-        $(".menu-active").removeClass("menu-active");
-        let liType = $(this).attr("data-li-type"); 
-        console.log(liType)       
-        $(`.${liType}-menu`).addClass("menu-active");
-        $(".active-li").removeClass("active-li");
-        $($($(this).parent())).addClass("active-li");
+        let liType = $(this).attr("data-li-type");
+        if (liType != "logout") {
+            $(".menu-active").removeClass("menu-active");
+            $(`.${liType}-menu`).addClass("menu-active");
+            $(".active-li").removeClass("active-li");
+            $($($(this).parent())).addClass("active-li");
+        }else{
+            sessionStorage.clear("token");
+            window.location.href = "../index.html";
+        }
     });
     $(document).on("click", ".card-btns", function (e) {
         e.preventDefault();
