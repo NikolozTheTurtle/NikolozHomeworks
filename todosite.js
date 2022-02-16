@@ -1,5 +1,5 @@
 $(function () {
-    let requestUrl = `http://127.0.0.1:5502/profiles.json`;
+    let requestUrl = `https://nikoloztheturtle.github.io/NikolozHomeworks/profiles.json`;
     $(document).on("input", ".my-form", function () {
         if ($(".pass")[0].value.length >= 8  && $(".email")[0].value.includes("@")){
             $(".my-btn").addClass("eligable-btn");
