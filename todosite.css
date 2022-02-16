@@ -1,0 +1,182 @@
+.my-form {
+    width: 30%;
+    margin: auto;
+    padding-top: 150px;
+}
+.eligable-btn {
+    background-color: hsl(11deg 86% 54%);
+}
+.my-form h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.my-form p a {
+    text-decoration: none;
+    color: hsl(11deg 86% 54%);
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.my-form p {
+    padding-top: 15px;
+}
+.navbar {
+    background-color: hsl(11deg 86% 54%);
+}
+.navbar .container-fluid p {
+    color: white;
+    font-family: sans-serif;
+}
+/* .main-flex {
+    display: flex;
+    width: 100%;
+} */
+.todo-menu {
+    background-color: hsl(0deg 0% 99%);
+    min-height: 100vh;
+    padding-bottom: 50px;
+    position: relative;
+}
+.card-text {
+    height: 25px;
+    overflow-y: hidden;
+    margin-bottom: 2.1em;
+}
+.card-body button {
+    background-color: transparent;
+    border: 0;
+    color: hsl(11deg 86% 54%);
+}
+.row {
+    --bs-gutter-x: 0;
+}
+.todo-menu .row {
+    margin-top: 30px;
+}
+.todo-menu .row .col-lg-6:nth-child(1) {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+.todo-menu .row .col-lg-6:nth-child(2) {
+    padding-right: 30px;
+    padding-left: 10px;
+}
+.side-menu {
+    padding-top: 40px;
+    border-right: 1px solid rgb(211, 210, 210); 
+    min-height: 100vh;
+}
+.img-side-menu {
+    height: 160px;
+    border-bottom: 1px solid rgb(211, 210, 210);
+}
+.img-side-menu img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: auto;
+}
+.img-side-menu img + p {
+    padding-top: 10px;
+    text-align: center;
+}
+.main-side-menu {
+    padding-top: 10px;
+}
+.main-side-menu ul li {
+    list-style: none;
+    padding: 10px 0 10px 10px;
+}
+.main-side-menu ul li a {
+    text-decoration: none;
+    color: gray; 
+}
+.menu-elem {
+    display: none;
+}
+.menu-active {
+    display: block;
+}
+.active-li {
+    border-bottom: 3px solid hsl(11deg 86% 54%);  
+}
+.active-li a {
+    color: hsl(11deg 86% 54%) !important;
+}
+.account-menu .navbar p {
+    font-size: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-family: sans-serif;
+}
+.account-menu .navbar {
+    background-color: rgb(224, 164, 140);
+}
+.account-menu .row {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+.account-menu .row .col-lg-6 p:first-child {
+    font-size: 24px;
+    font-family: sans-serif;
+
+}
+.account-menu .row .col-lg-12 p:first-child {
+    font-size: 24px;
+    font-family: sans-serif;
+
+}
+.add-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsl(11deg 86% 54%);
+    cursor: pointer;
+}
+.add-btn .line:first-child {
+    position: absolute;
+    width: 5px;
+    top: 50%;
+    left: 50%;
+    height: 20px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+.add-btn .line:last-child{
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.account-menu .row .col-lg-6 p:last-child {
+    border-radius: 10px;
+    border: 2px solid rgb(243, 243, 243);
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+.account-menu .row .col-lg-12 p:last-child {
+    border-radius: 10px;
+    border: 2px solid rgb(243, 243, 243);
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+.account-menu .row .col-lg-6:nth-child(1){
+    padding-right: 20px;
+}
+.account-menu .row .col-lg-6:nth-child(2){
+    padding-left: 20px;
+}

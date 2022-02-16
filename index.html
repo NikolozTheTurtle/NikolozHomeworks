@@ -4,119 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="magnify-master/dist/css/magnify.css">
-  <link rel="stylesheet" href="node_modules/rangeslider.js/dist/rangeslider.css">
-<!-- Optional mobile plugin (uncomment the line below to enable): -->
-<!-- <script src="/js/jquery.magnify-mobile.js"></script> -->
-    <style>
-        .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-     
-#family {
-  width: 100%;
-  max-width: 200px;
-  margin: 10px 100px 0 20px;
-}
-.magnify > .magnify-lens {
-  background-color: #fff !important; /* Prevent adjacent image from appearing in lens */
-}
-output {
-            display: block;
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-            margin: 30px 0;
-            width: 100%;
-        }
-
-        .u-left {
-            float: left;
-        }
-
-        .u-cf:before,
-        .u-cf:after {
-            content: "";
-            display: table;
-        }
-        .u-cf:after {
-            clear: both;
-        }
-
-        .u-text-left {
-            text-align: left;
-        }
-    </style>
+    <title>ToDo app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="todosite.css">
 </head>
 <body>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="imgs/man1.jpg" width="100%" alt=""></div>
-          <div class="swiper-slide"><img src="imgs/man1.jpg" width="100%" alt=""></div>
-          <div class="swiper-slide"><img src="imgs/man1.jpg" width="100%" alt=""></div>
-          <div class="swiper-slide"><img src="imgs/man1.jpg" width="100%" alt=""></div>
-          <div class="swiper-slide"><img src="imgs/man1.jpg" width="100%" alt=""></div>
-          <div class="swiper-slide"><img src="imgs/man1.jpg" width="100%" alt=""></div>
-          <div class="swiper-slide"><img src="imgs/man1.jpg" width="100%" alt=""></div>
-          <div class="swiper-slide"><img src="imgs/man1.jpg" width="100%" alt=""></div>
-          <div class="swiper-slide"><img src="imgs/man1.jpg" width="100%" alt=""></div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-    
-
-<!-- Create links -->
-<a data-fslightbox="gallery" href="imgs/man2.jpg">
-    <img src="imgs/man2.jpg" width="150" alt="">
-    </a>
-
-
-    <!-- MAGNIFIER !!!!!!! -->
-    
-    <img id="family" src="imgs/man44.jpg" alt="Sample image" class="zoom" data-magnify-src="imgs/man44.jpg">
-
-    <input
-    type="range"
-    min="10"                    
-    max="1000"                  
-    step="10"                  
-    value="300"               
-    data-orientation="vertical"
->
+    <header>
+        <form action="GET" class="my-form">
+            <h1>Login</h1>
+            <input type="email" name="" id="email" class="form-control mb-3 email" placeholder="Email">
+            <input type="password" name="" id="pass" class="form-control mb-3 pass" placeholder="Password">
+            <button type="submit" class="form-control my-btn" disabled>SIGN IN</button>
+            <p><a href="">Don`t have an account? Sign up</a></p>
+        </form>
+    </header>
 
 
 
@@ -124,73 +25,17 @@ output {
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="magnify-master/dist/js/jquery.magnify.js"></script>
-<script src="node_modules/rangeslider.js/dist/rangeslider.min.js"></script>
-        <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="node_modules/fslightbox/index.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        },
-      });
-      $(document).ready(function() {
-  $('.zoom').magnify({
-    speed: 200,
-    src: 'imgs/man44.jpg'
-  });
-});
-$('input[type="range"]').rangeslider({
 
-// Feature detection the default is `true`.
-// Set this to `false` if you want to use
-// the polyfill also in Browsers which support
-// the native <input type="range"> element.
-polyfill: true,
 
-// Default CSS classes
-rangeClass: 'rangeslider',
-disabledClass: 'rangeslider--disabled',
-horizontalClass: 'rangeslider--horizontal',
-verticalClass: 'rangeslider--vertical',
-fillClass: 'rangeslider__fill',
-handleClass: 'rangeslider__handle',
 
-// Callback function
-onInit: function() {},
 
-// Callback function
-onSlide: function(position, value) {},
 
-// Callback function
-onSlideEnd: function(position, value) {}
-});
-      </script>
-      
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="todosite.js"></script>
 </body>
 </html>

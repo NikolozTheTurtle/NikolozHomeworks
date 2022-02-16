@@ -1,7 +1,19 @@
 $(function () {
   // code for dark and light mode START!!!
+  if (localStorage.getItem("mode") != null) {
+      if (localStorage.getItem("mode") == "dark") {
+          $("body").addClass("dark-mode");
+      }else{
+          $("body").removeClass("dark-mode");
+      };
+  };
   $(document).on("click", ".switch", function () {
     $("body").toggleClass("dark-mode");
+    if ($("body")[0].classList.contains("dark-mode")) {
+      localStorage.setItem("mode", "dark");
+    }else{
+      localStorage.setItem("mode", "light");
+    }
   });
   // code for dark and light mode END!!!
 

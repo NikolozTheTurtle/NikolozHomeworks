@@ -1,0 +1,32 @@
+[
+    {
+        "name": "ნიკოლოზი",
+        "lastName": "რუსიშვილი",
+        "email": "nikaemail@gmail.com",
+        "password": "12345678",
+        "number": "555123513",
+        "city": "თბილისი",
+        "country": "საქართველო",
+        "token": "User1"
+    },
+    {
+        "name": "Will",
+        "lastName": "Smith",
+        "email": "willsmith@gmail.com",
+        "password": "willsith123",
+        "number": "991941234",
+        "city": "Las-Vegas",
+        "country": "USA",
+        "token": "User2"
+    },
+    {
+        "name": "Joni",
+        "lastName": "Kaci",
+        "email": "kacijoni@gmail.com",
+        "password": "joni2314342",
+        "number": "88823742",
+        "city": "NYC",
+        "country": "USA",
+        "token": "User3"
+    }
+]
