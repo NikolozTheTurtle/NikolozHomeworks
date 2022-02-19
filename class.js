@@ -36,7 +36,7 @@ class First {
     this.forStyleOne(this.cardSmallStyle, ".card-text");
   }
 }
-console.log(Url)
+console.log(Url);
 fetch(Url, {}).then((res) =>
   res.json().then((data) => {
     arr = [];
