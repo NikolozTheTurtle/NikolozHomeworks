@@ -1,37 +1,37 @@
 [
     {
         "name": "ჯიგო",
-        "number": 1,
+        "surname": "smith",
         "photo": "imgs/man6.jpg"
     },
     {
         "name": "ლუკა",
-        "number": 2,
+        "surname": "smith",
         "photo": "imgs/man3.jpg"
     },
     {
         "name": "მარიამი",
-        "number": 3,
+        "surname": "smith",
         "photo": "imgs/fotoo.jpg"
     },
     {
         "name": "ნიკა",
-        "number": 4,
+        "surname": "smith",
         "photo": "imgs/man7.jpg"
     },
     {
         "name": "შაკო",
-        "number": 5,
+        "surname": "smith",
         "photo": "imgs/man4.jpg"
     },
     {
         "name": "ჯეკო",
-        "number": 6,
+        "surname": "smith",
         "photo": "imgs/man1.jpg"
     },
     {
         "name": "თემო",
-        "number": 7,
+        "surname": "smith",
         "photo": "imgs/man2.jpg"
     }
 ]
