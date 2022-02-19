@@ -1,4 +1,4 @@
-const Url = `${window.location.origin}jsfolder/ajax.json`;
+const Url = `${window.location.origin}/jsfolder/ajax.json`;
 let arr;
 class First {
   constructor(info, cardHeaderStyle, cardImgStyle, cardSmallStyle) {
@@ -36,7 +36,7 @@ class First {
     this.forStyleOne(this.cardSmallStyle, ".card-text");
   }
 }
-console.log(Url);
+console.log(window.location.host);
 fetch(Url, {}).then((res) =>
   res.json().then((data) => {
     arr = [];
