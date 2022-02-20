@@ -1,4 +1,4 @@
-const Url = `${window.location.host}/jsfolder/ajax.json`;
+const Url = `${window.location.host}/NikolozHomeworks/jsfolder/ajax.json`;
 let arr;
 class First {
   constructor(info, cardHeaderStyle, cardImgStyle, cardSmallStyle) {
